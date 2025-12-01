@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 
-def word_count( input_text ) :
-    words = input_text.split()
-    num_words = len( words )
-    return f"Found {num_words} total words"
+from stats import word_count
 
 def get_book_text( file_path ) :
     with open( file_path ) as fp :
